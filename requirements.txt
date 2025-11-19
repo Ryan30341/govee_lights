@@ -1,0 +1,21 @@
+# Web Framework
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Govee API
+requests>=2.31.0
+
+# Audio Processing
+numpy>=1.24.0
+pyaudio>=0.2.14
+scipy>=1.11.0
+
+# WebSocket for real-time updates
+flask-socketio>=5.3.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# HTTP client
+httpx>=0.25.0
+
