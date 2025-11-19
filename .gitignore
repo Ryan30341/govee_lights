@@ -1,6 +1,11 @@
 # GitHub PAT token
 github_token.txt
 
+# Govee API key
+goove_api_key.txt
+*govee*api*key*.txt
+*api*key*.txt
+
 # Python
 __pycache__/
 *.py[cod]
