@@ -1,6 +1,6 @@
 # Git Worktrees Setup
 
-This project uses git worktrees to enable parallel development workflows for different features.
+This project uses git worktrees to enable parallel development workflows for different features. All feature worktrees live under the shared directory `govee_lights_worktrees/` at the same level as the main project folder for a cleaner layout.
 
 ## Available Worktrees
 
@@ -8,15 +8,15 @@ This project uses git worktrees to enable parallel development workflows for dif
    - Branch: `main`
    - Purpose: Main development branch, stable code
 
-2. **Audio Feature** (`govee_lights-audio/`)
+2. **Audio Feature** (`govee_lights_worktrees/audio/`)
    - Branch: `audio-feature`
    - Purpose: Audio processing, frequency analysis, microphone integration
 
-3. **API Feature** (`govee_lights-api/`)
+3. **API Feature** (`govee_lights_worktrees/api/`)
    - Branch: `api-feature`
    - Purpose: Govee API integration, device communication
 
-4. **Frontend Feature** (`govee_lights-frontend/`)
+4. **Frontend Feature** (`govee_lights_worktrees/frontend/`)
    - Branch: `frontend-feature`
    - Purpose: Web interface, UI/UX, client-side JavaScript
 
@@ -24,12 +24,12 @@ This project uses git worktrees to enable parallel development workflows for dif
 
 ### Switching Between Worktrees
 
-Each worktree is a separate directory. Simply navigate to the desired worktree directory:
+Each worktree is located inside the shared `govee_lights_worktrees/` directory adjacent to the main repo. Navigate to the desired worktree directory:
 
 ```bash
-cd ../govee_lights-audio    # Work on audio features
-cd ../govee_lights-api      # Work on API features
-cd ../govee_lights-frontend # Work on frontend features
+cd ../govee_lights_worktrees/audio     # Work on audio features
+cd ../govee_lights_worktrees/api       # Work on API features
+cd ../govee_lights_worktrees/frontend  # Work on frontend features
 ```
 
 ### Committing Changes
